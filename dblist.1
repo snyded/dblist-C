@@ -1,0 +1,30 @@
+.\"
+.\" Man page for dblist, v1.0
+.\"
+.TH DBLIST 1
+.SH NAME
+dblist \- dumps the contents of a database table to stdout
+.SH SYNOPSIS
+dblist \-d dbname \-t tabname [\-i idxname [value] | -h]
+.SH DESCRIPTION
+.I Dblist
+will print the data for all columns in an Informix database table.
+It has the ability to select an index to sort by and also allows
+the selection of a starting position within that index.
+.SH OPTIONS
+.TP
+.B \-d
+database name
+.TP
+.B \-t
+table name
+.TP
+.B \-i
+index name
+.TP
+     value is where in the table the listing will start
+.TP
+.B \-h
+display header info only
+.SH SUPPORT
+Send bug reports to Dave Snyder <dave@snide.com>
